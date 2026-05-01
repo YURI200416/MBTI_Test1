@@ -1,0 +1,110 @@
+/* ===== RESET ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== PAGE BACKGROUND ===== */
+body {
+  background: #0d0f12;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* ===== QUIZ CONTAINER ===== */
+#quiz {
+  width: 92%;
+  max-width: 520px;
+  background: #1a1d22;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* ===== QUESTION TEXT ===== */
+#question {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #eaeaea;
+}
+
+/* ===== ANSWER AREA ===== */
+#answer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ===== ANSWER BUTTONS ===== */
+#answer button {
+  padding: 14px;
+  font-size: 15px;
+  border: none;
+  border-radius: 10px;
+  background: #2a2f36;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+/* 🔥 GREEN HOVER TINT (your request) */
+#answer button:hover {
+  background: rgba(46, 125, 50, 0.9); /* green tint */
+  transform: scale(1.03);
+}
+
+/* CLICK FEEDBACK */
+#answer button:active {
+  transform: scale(0.97);
+}
+
+/* ===== RESULT SCREEN ===== */
+#result-screen {
+  width: 92%;
+  max-width: 520px;
+  background: #1a1d22;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
+
+/* RESULT TITLE */
+#results_text {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+/* RESULT LIST */
+#result {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* INDIVIDUAL SCORE ROW */
+#result p {
+  background: #2a2f36;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* ===== SMALL MOBILE IMPROVEMENT ===== */
+@media (max-width: 480px) {
+  #question {
+    font-size: 16px;
+  }
+
+  #answer button {
+    font-size: 14px;
+    padding: 12px;
+  }
+}
